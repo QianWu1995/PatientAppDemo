@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_visits">
+
+    <fragment
+        android:id="@+id/navigation_visits"
+        android:name="com.qianwu.patientbooking.ui.visits.VisitsFragment"
+        android:label="@string/Visits"
+        tools:layout="@layout/fragment_visits" />
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.qianwu.patientbooking.ui.profile.ProfileFragment"
+        android:label="@string/Profile"
+        tools:layout="@layout/fragment_profile" />
+</navigation>
